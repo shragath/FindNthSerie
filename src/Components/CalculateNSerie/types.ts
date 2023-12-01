@@ -9,7 +9,7 @@ class Equations {
     return (
       2 * this.findNthFibonacci(this.n - 2) +
       3 * this.findNthTriangular(this.n - 2) -
-      7 * this.findNthPrimo(this.n - 2)
+      7 * this.findNthPrimo(this.n - 1)
     );
   }
 
