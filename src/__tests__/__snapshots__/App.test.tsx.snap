@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders components sin fallos Prueba de comparacion snapshot 1`] = `
+[
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="nInput"
+    >
+      Escribe el numero (n) de la serie:
+    </label>
+    <input
+      id="nInput"
+      placeholder="Number"
+      required={true}
+      title="n series value"
+      type="number"
+    />
+    <button
+      id="buttonCalcular"
+      type="submit"
+    >
+      Calcular
+    </button>
+  </form>,
+  <div>
+    <label>
+      Equation: serie(
+      n
+      ) = 2 fibonacci(
+      n
+       - 2) + 3 triangular(
+      n
+       - 2) - 7 primo(
+      n
+       - 1)
+    </label>
+  </div>,
+  <div>
+    <p>
+      Fibonacci(
+      -2
+      ) = 
+      0
+      , Triangular(
+      -2
+      ) = 
+      0
+      , Primo(
+      -1
+      ) =
+       
+      0
+    </p>
+  </div>,
+  <div>
+    <label>
+      Resultado = 
+      0
+       + 
+      0
+       -
+       
+      0
+       = 
+      <b>
+        0
+      </b>
+    </label>
+  </div>,
+]
+`;
