@@ -1,8 +1,8 @@
-import "./App.css";
-import ShowEqForm from "./Components/Form";
+import './App.css'
+import ShowEqForm from './Components/Form'
 
 function App() {
-  return <ShowEqForm />;
+    return <ShowEqForm />
 }
 
-export default App;
+export default App
