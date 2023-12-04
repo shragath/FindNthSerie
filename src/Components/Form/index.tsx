@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import ShowRes from '../ShowResult'
-import Equations from '../CalculateNSerie/types'
+import { useState } from 'react';
+import CalculateNSerie from '../CalculateNSerie';
+import Equations from '../CalculateNSerie/types';
 
 interface FormElements extends HTMLFormControlsCollection {
-    nInput: HTMLInputElement
+    nInput: HTMLInputElement;
 }
 
 interface EqFormElement extends HTMLFormElement {
-    readonly elements: FormElements
+    readonly elements: FormElements;
 }
 
 const ShowEqForm = () => {
-    const [n, setN] = useState(0)
-    const [nFibonacci, setNFibonacci] = useState(0)
+    const [n, setN] = useState(0);
+    const [nFibonacci, setNFibonacci] = useState(0);
 
     const handleSubmit = (e: React.FormEvent<EqFormElement>) => {
-        e.preventDefault()
+        e.preventDefault();
 
-        const form = e.currentTarget
+        const form = e.currentTarget;
 
         try {
-            const nInput = Number.parseInt(form.elements.nInput.value)
+            const nInput = Number.parseInt(form.elements.nInput.value);
 
-            setN(nInput)
-            const test: Equations = new Equations(nInput)
-            setNFibonacci(test.findNthFibonacci(nInput))
+            setN(nInput);
+            const test: Equations = new Equations(nInput);
+            setNFibonacci(test.findNthFibonacci(nInput));
         } catch (error) {
-            throw new Error('El valor no es un numero')
+            throw new Error('El valor no es un numero');
         }
-    }
+    };
 
     return (
         <>
@@ -46,9 +46,9 @@ const ShowEqForm = () => {
                 <button type="submit">Calcular</button>
             </form>
 
-            <ShowRes value={nFibonacci} />
+            <CalculateNSerie value={n} />
         </>
-    )
-}
+    );
+};
 
-export default ShowEqForm
+export default ShowEqForm;

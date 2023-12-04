@@ -1,10 +1,5 @@
-import { useEffect } from 'react'
 
 const ShowRes = ({ value = 0 }: { value: number }) => {
-    useEffect(() => {
-        console.log('Render ShowRes')
-    }, [])
-    // const res = 0;
     return (
         <>
             <div>
@@ -19,7 +14,7 @@ const ShowRes = ({ value = 0 }: { value: number }) => {
                 </label>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default ShowRes
+export default ShowRes;

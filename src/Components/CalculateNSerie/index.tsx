@@ -1,8 +1,9 @@
-import ShowRes from '../ShowResult'
-import Equations from './types'
+import ShowRes from '../ShowResult';
+import Equations from './types';
 
-function calculate_serie({ n = 0 }: { n: number }) {
-    const serie = new Equations(n).findNthFibonacci(n)
-    // const [serie, setSerie] = useState(0);
-    return <ShowRes value={serie} />
+function CalculateNSerie({ n = 0 }: { n: number }) {
+    const serie = new Equations(n).findNthFibonacci(n);
+    return <ShowRes value={serie} />;
 }
+
+export default CalculateNSerie;
