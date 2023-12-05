@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
-Pasos para instalar el ropo.
-`git clone https://github.com/shragath/FindNthSerie
+Pasos para instalar el repositorio.
+```
+git clone https://github.com/shragath/FindNthSerie
 
-cd FindNthSerie && npm install`
+cd FindNthSerie && npm install
+```
